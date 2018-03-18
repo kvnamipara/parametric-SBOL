@@ -10,6 +10,7 @@
     </style>
 </head>
 <body>
+    <h2> cds-specification symbol</h2>
     <div class="svg-ele">
         <svg
         xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -24,8 +25,8 @@
         xml:space="preserve"
         x="0px"
         y="0px"
-        width="500px"
-        height="500px"
+        width="800px"
+        height="300px"
         id="logo1"
         inkscape:version="0.92.2 5c3e80d, 2017-08-06"
         sodipodi:docname="cds-specification.svg"
@@ -106,8 +107,8 @@
 
                 </svg>
                 </div>
-                <div>
-                    <div style="display:inline-block;width:25%;">
+                <div style="margin:0 0 0 10%;">
+                    <div style="display:inline-block;width:30%;">
                         <h3>Image</h3>
                         <p>
                         <label> length </label>
@@ -141,6 +142,10 @@
                         <input type="number" value="2" id="strokeWidthLineA"/>
                     </div>
                 </div>
+                <div style="margin:0 0 0 10%;">
+                <h4> Measurements </h4>
+                <img src="{{ url_for('static', filename='sample.jpg') }}">
+                </div>
                 <script src="https://wzrd.in/standalone/parametric-svg@0.0.5"></script>
-                <script src="script.js"></script>
+                <script src="{{ url_for('static', filename='script.js') }}"></script>
                 </body>
